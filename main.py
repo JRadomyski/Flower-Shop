@@ -36,7 +36,7 @@ def save_to_csv(contents, filename):
     path = os.path.join('outputs', filename)
     with open(path, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(['Link', 'Title', 'Image Link', 'Custom Label 1'])
+        writer.writerow(['Link', 'Title', 'Image', 'Custom Label'])
         for content in contents:
             writer.writerow(content)
 
